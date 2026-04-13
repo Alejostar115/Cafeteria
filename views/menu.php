@@ -207,7 +207,11 @@ if (isset($_SESSION['nombre'])) {
 <body>
 
     <header class="header-alumno">
-        <h2 style="margin:0; font-size: 1.2rem;">Hola, <?= $nombre_usuario ?> 👋</h2>
+        <h2 style="margin:0; font-size: 1.2rem;">
+            Hola,
+            <?= is_array($_SESSION['nombre']) ? (isset($_SESSION['nombre']['nombre']) ? $_SESSION['nombre']['nombre'] : 'Usuario') : $_SESSION['nombre'] ?>
+            👋
+        </h2>
         <p style="margin:5px 0 0; color:var(--muted); font-size: 0.75rem;">¿Qué se te antoja hoy?</p>
 
         <div class="categories-scroll">
