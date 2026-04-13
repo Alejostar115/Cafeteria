@@ -1,0 +1,22 @@
+/* assets/css/global.css */
+
+:root {
+    --color-primario: #b38c00; /* Azul estilo institucional */
+    --color-primario-hover: #004494;
+    --fondo-general: #f4f7f6;
+    --texto-oscuro: #333333;
+    --texto-claro: #ffffff;
+    --borde-suave: #dddddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--fondo-general);
+    color: var(--texto-oscuro);
+}
